@@ -831,7 +831,7 @@
             max: 100,
             size: 150,
             speed: 30,
-            barsize: '12',
+            barsize: '8',
             fillcolor: 'none',
             easing: 'ease'
         });
@@ -1198,7 +1198,7 @@
         $(card).find('.dataTables_info span.infoRows').text($tbodyRows);
     }
 
-   function initTable(card,isSearch, searchText, infoBefore, infoAfter, infoFilteredBefore, infoFilteredAfter){
+    function initTable(card,isSearch, searchText, infoBefore, infoAfter, infoFilteredBefore, infoFilteredAfter){
         var $target = $(card);
             $target.find('table').dataTable({
             retrieve:true,
@@ -1275,5 +1275,5 @@
                 $(this).addClass('popup-btn');
             });
         }
-    } 
+    }
 })(jQuery);
